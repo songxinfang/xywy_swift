@@ -25,27 +25,30 @@ class MyTabBarViewController: UITabBarController, UITabBarControllerDelegate {
     private func zjInit() {
         var vcarray = [UINavigationController]()
         
-//        let mainVM = MNLoginViewModel()
-        let mainVC = UIViewController.init()
-        let mainNav = UINavigationController(rootViewController: mainVC)
-        vcarray.append(mainNav)
-        firstVCArr.append(mainVC)
+        
+        for _ in 1...5
+        {
+            let mainVC = UIViewController.init()
+            let mainNav = UINavigationController(rootViewController: mainVC)
+            vcarray.append(mainNav)
+            firstVCArr.append(mainVC)
+        }
         
         self.viewControllers = vcarray
         
-        let imgs = ["tabbar_home"]
-        let tabbarTitles = ["首页"]
-        let selectedImages = ["tabbar_home_selected"]
+        var icons = ["tabbar_home", "tabbar_health_header", "tabbar_search_doctor", "tabbar_ask_drug", "tabbar_mine"]
+        let tabbarTitles = ["首页", "健康头条", "寻医", "问药", "我的"]
+//        let selectedImages = ["tabbar_home_selected"]
         
         for (index, _) in vcarray.enumerated() {
-            var temimg = UIImage.init(named: imgs[index])
+            var temimg = UIImage.init(named: icons[index])
             temimg = temimg?.withRenderingMode(UIImageRenderingMode.alwaysOriginal)
             
             let nav = vcarray[index]
             nav.tabBarItem.image = temimg
             nav.tabBarController?.tabBar.tintColor = UIColor.black
             nav.tabBarItem.title = tabbarTitles[index]
-            nav.tabBarItem.selectedImage = UIImage.init(named: selectedImages[index])
+            nav.tabBarItem.selectedImage = UIImage.init(named: icons[index].appending("_selected"))
         }
     }
 

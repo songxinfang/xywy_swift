@@ -73,6 +73,7 @@
 		5788FBE41E768E49006730D7 /* UICategory */ = {
 			isa = PBXGroup;
 			children = (
+				5788FBF71E76A329006730D7 /* UIView+Extension.swift */,
 			);
 			name = UICategory;
 			sourceTree = "<group>";
@@ -103,7 +104,6 @@
 			isa = PBXGroup;
 			children = (
 				5788FBF61E76A329006730D7 /* MNPublic.swift */,
-				5788FBF71E76A329006730D7 /* UIView+Extension.swift */,
 			);
 			name = Public;
 			sourceTree = "<group>";
