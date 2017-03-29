@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		57761DA21E8A620900D85A30 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57761DA01E8A620900D85A30 /* MainViewController.swift */; };
+		57761DA31E8A620900D85A30 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 57761DA11E8A620900D85A30 /* MainViewController.xib */; };
 		5788FBEC1E769555006730D7 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5788FBEB1E769555006730D7 /* BaseViewController.swift */; };
 		5788FBF01E76958B006730D7 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5788FBEF1E76958B006730D7 /* BaseView.swift */; };
 		5788FBF21E769634006730D7 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5788FBF11E769634006730D7 /* BaseViewModel.swift */; };
@@ -22,6 +24,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		57761DA01E8A620900D85A30 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainViewController.swift; path = Classes/MainViewController.swift; sourceTree = "<group>"; };
+		57761DA11E8A620900D85A30 /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MainViewController.xib; path = Classes/MainViewController.xib; sourceTree = "<group>"; };
 		5788FBEB1E769555006730D7 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseViewController.swift; path = BaseClass/BaseViewController.swift; sourceTree = "<group>"; };
 		5788FBEF1E76958B006730D7 /* BaseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseView.swift; path = BaseClass/BaseView.swift; sourceTree = "<group>"; };
 		5788FBF11E769634006730D7 /* BaseViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseViewModel.swift; path = BaseClass/BaseViewModel.swift; sourceTree = "<group>"; };
@@ -96,6 +100,8 @@
 			isa = PBXGroup;
 			children = (
 				5788FBF31E769CE3006730D7 /* MyTabBarViewController.swift */,
+				57761DA01E8A620900D85A30 /* MainViewController.swift */,
+				57761DA11E8A620900D85A30 /* MainViewController.xib */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -235,6 +241,7 @@
 				57A9F0081E7684FA002B9DF1 /* LaunchScreen.storyboard in Resources */,
 				57A9F0051E7684FA002B9DF1 /* Assets.xcassets in Resources */,
 				57A9F0031E7684FA002B9DF1 /* Main.storyboard in Resources */,
+				57761DA31E8A620900D85A30 /* MainViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,6 +306,7 @@
 				5788FBFA1E76A329006730D7 /* UIView+Extension.swift in Sources */,
 				5788FBF91E76A329006730D7 /* MNPublic.swift in Sources */,
 				57A9EFFE1E7684FA002B9DF1 /* AppDelegate.swift in Sources */,
+				57761DA21E8A620900D85A30 /* MainViewController.swift in Sources */,
 				5788FBEC1E769555006730D7 /* BaseViewController.swift in Sources */,
 				5788FBF01E76958B006730D7 /* BaseView.swift in Sources */,
 			);

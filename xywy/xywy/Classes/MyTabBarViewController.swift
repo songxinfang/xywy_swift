@@ -25,11 +25,10 @@ class MyTabBarViewController: UITabBarController, UITabBarControllerDelegate {
     private func zjInit() {
         var vcarray = [UINavigationController]()
         
-        
-        for _ in 1...5
-        {
-            let mainVC = UIViewController.init()
+        for ddd in 1...5 {
+            let mainVC = MainViewController.init()
             let mainNav = UINavigationController(rootViewController: mainVC)
+            mainNav.navigationBar.tintColor = UIColor.init(white: (CGFloat(6 - ddd) * CGFloat(0.2)), alpha: 1.0)
             vcarray.append(mainNav)
             firstVCArr.append(mainVC)
         }
@@ -38,7 +37,6 @@ class MyTabBarViewController: UITabBarController, UITabBarControllerDelegate {
         
         var icons = ["tabbar_home", "tabbar_health_header", "tabbar_search_doctor", "tabbar_ask_drug", "tabbar_mine"]
         let tabbarTitles = ["首页", "健康头条", "寻医", "问药", "我的"]
-//        let selectedImages = ["tabbar_home_selected"]
         
         for (index, _) in vcarray.enumerated() {
             var temimg = UIImage.init(named: icons[index])
