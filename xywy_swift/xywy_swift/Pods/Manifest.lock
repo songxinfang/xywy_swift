@@ -1,0 +1,40 @@
+PODS:
+  - Alamofire (4.4.0)
+  - BSGridCollectionViewLayout (1.2.0)
+  - BSImagePicker (2.6.0):
+    - BSGridCollectionViewLayout (~> 1.2.0)
+    - UIImageViewModeScaleAspect (= 1.5)
+  - Kingfisher (3.6.1)
+  - PullToRefresher (2.0.2)
+  - RxCocoa (3.4.0):
+    - RxSwift (~> 3.4)
+  - RxSwift (3.4.0)
+  - SnapKit (3.2.0)
+  - SwiftyJSON (3.1.4)
+  - UIImageViewModeScaleAspect (1.5)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.4)
+  - BSImagePicker (~> 2.4)
+  - Kingfisher (~> 3.0)
+  - PullToRefresher (~> 2.0)
+  - RxCocoa (~> 3.0)
+  - RxSwift (~> 3.0)
+  - SnapKit (~> 3.2.0)
+  - SwiftyJSON
+
+SPEC CHECKSUMS:
+  Alamofire: dc44b1600b800eb63da6a19039a0083d62a6a62d
+  BSGridCollectionViewLayout: 8f12c8e1e08c47057f5a39a6828f4395f043d78f
+  BSImagePicker: 7b740d0a9f23160bcdca01f179445583bd1c09b0
+  Kingfisher: 2f31cb75f3e98d3d4c406cbdcd9b263e956cfa67
+  PullToRefresher: 5e101a8c3523e67ee0291375ba932ef59e0853c2
+  RxCocoa: d14ef6b6029e1ddc6e966508c09289090de68ff9
+  RxSwift: 3789a1af753002a14edecdb698a2424624296a9c
+  SnapKit: 1ca44df72cfa543218d177cb8aab029d10d86ea7
+  SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
+  UIImageViewModeScaleAspect: 11a790a0b9d248a13dc63e3a78991f1463b6d84e
+
+PODFILE CHECKSUM: 81b1acebb323bbb9c452e03bb48991ba37b377cb
+
+COCOAPODS: 1.2.0.beta.1
