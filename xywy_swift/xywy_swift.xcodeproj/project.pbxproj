@@ -33,6 +33,16 @@
 		575672311E9B7E9A00063EB0 /* SupportCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575672181E9B7E9900063EB0 /* SupportCode.swift */; };
 		575672321E9B7E9A00063EB0 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5756721B1E9B7E9900063EB0 /* UIView+Extension.swift */; };
 		575672341E9B7F9C00063EB0 /* MNPublic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575672331E9B7F9C00063EB0 /* MNPublic.swift */; };
+		57883EFB1E9C69E80053F318 /* MyCenterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57883EF91E9C69E80053F318 /* MyCenterViewController.swift */; };
+		57883EFC1E9C69E80053F318 /* MyCenterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 57883EFA1E9C69E80053F318 /* MyCenterViewController.xib */; };
+		57883EFF1E9C6A590053F318 /* UserInfoCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57883EFE1E9C6A590053F318 /* UserInfoCenter.swift */; };
+		57B0C3241E9C76ED00AE2B5C /* UserInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B0C3231E9C76ED00AE2B5C /* UserInfoModel.swift */; };
+		57B0C3271E9CA47A00AE2B5C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B0C3251E9CA47A00AE2B5C /* LoginViewController.swift */; };
+		57B0C3281E9CA47A00AE2B5C /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 57B0C3261E9CA47A00AE2B5C /* LoginViewController.xib */; };
+		57B0C32A1E9CA54200AE2B5C /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B0C3291E9CA54200AE2B5C /* UIViewController+Extension.swift */; };
+		57B0C32C1E9CACFE00AE2B5C /* LoginHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B0C32B1E9CACFE00AE2B5C /* LoginHelper.swift */; };
+		57B0C32E1E9CB66900AE2B5C /* LoginSwitchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B0C32D1E9CB66900AE2B5C /* LoginSwitchView.swift */; };
+		57B0C3311E9CC0AD00AE2B5C /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B0C3301E9CC0AD00AE2B5C /* BaseViewController.swift */; };
 		E8825B3509ED750277316AF8 /* Pods_xywy_swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C8B92B8278BAF17E81C35DB /* Pods_xywy_swift.framework */; };
 /* End PBXBuildFile section */
 
@@ -88,6 +98,16 @@
 		575672181E9B7E9900063EB0 /* SupportCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SupportCode.swift; sourceTree = "<group>"; };
 		5756721B1E9B7E9900063EB0 /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		575672331E9B7F9C00063EB0 /* MNPublic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MNPublic.swift; sourceTree = "<group>"; };
+		57883EF91E9C69E80053F318 /* MyCenterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCenterViewController.swift; sourceTree = "<group>"; };
+		57883EFA1E9C69E80053F318 /* MyCenterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyCenterViewController.xib; sourceTree = "<group>"; };
+		57883EFE1E9C6A590053F318 /* UserInfoCenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInfoCenter.swift; sourceTree = "<group>"; };
+		57B0C3231E9C76ED00AE2B5C /* UserInfoModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInfoModel.swift; sourceTree = "<group>"; };
+		57B0C3251E9CA47A00AE2B5C /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		57B0C3261E9CA47A00AE2B5C /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		57B0C3291E9CA54200AE2B5C /* UIViewController+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		57B0C32B1E9CACFE00AE2B5C /* LoginHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginHelper.swift; sourceTree = "<group>"; };
+		57B0C32D1E9CB66900AE2B5C /* LoginSwitchView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginSwitchView.swift; sourceTree = "<group>"; };
+		57B0C3301E9CC0AD00AE2B5C /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		8C8B92B8278BAF17E81C35DB /* Pods_xywy_swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_xywy_swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -144,6 +164,7 @@
 			children = (
 				575671F71E9B7E9900063EB0 /* Base.lproj */,
 				575671FC1E9B7E9900063EB0 /* Classes */,
+				57B0C32F1E9CC09900AE2B5C /* BaseClass */,
 				575672111E9B7E9900063EB0 /* Network */,
 				575672141E9B7E9900063EB0 /* Public */,
 				575672191E9B7E9900063EB0 /* Tools */,
@@ -187,12 +208,13 @@
 		575671FC1E9B7E9900063EB0 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				575671FD1E9B7E9900063EB0 /* AskMedicine */,
-				575672001E9B7E9900063EB0 /* FindDoctor */,
-				575672031E9B7E9900063EB0 /* HeadHealth */,
+				57883EFD1E9C6A460053F318 /* UserInfoCenter */,
 				575672061E9B7E9900063EB0 /* HomePage */,
-				575672091E9B7E9900063EB0 /* LoginRegister */,
+				575672031E9B7E9900063EB0 /* HeadHealth */,
+				575672001E9B7E9900063EB0 /* FindDoctor */,
+				575671FD1E9B7E9900063EB0 /* AskMedicine */,
 				5756720E1E9B7E9900063EB0 /* MyCenter */,
+				575672091E9B7E9900063EB0 /* LoginRegister */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -236,6 +258,9 @@
 		575672091E9B7E9900063EB0 /* LoginRegister */ = {
 			isa = PBXGroup;
 			children = (
+				57B0C3251E9CA47A00AE2B5C /* LoginViewController.swift */,
+				57B0C3261E9CA47A00AE2B5C /* LoginViewController.xib */,
+				57B0C32D1E9CB66900AE2B5C /* LoginSwitchView.swift */,
 				5756720A1E9B7E9900063EB0 /* RegisterViewController.swift */,
 				5756720B1E9B7E9900063EB0 /* RegisterViewController.xib */,
 				5756720C1E9B7E9900063EB0 /* RegisterViewModel.swift */,
@@ -247,6 +272,8 @@
 		5756720E1E9B7E9900063EB0 /* MyCenter */ = {
 			isa = PBXGroup;
 			children = (
+				57883EF91E9C69E80053F318 /* MyCenterViewController.swift */,
+				57883EFA1E9C69E80053F318 /* MyCenterViewController.xib */,
 			);
 			path = MyCenter;
 			sourceTree = "<group>";
@@ -273,6 +300,7 @@
 		575672191E9B7E9900063EB0 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				57B0C32B1E9CACFE00AE2B5C /* LoginHelper.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -281,8 +309,26 @@
 			isa = PBXGroup;
 			children = (
 				5756721B1E9B7E9900063EB0 /* UIView+Extension.swift */,
+				57B0C3291E9CA54200AE2B5C /* UIViewController+Extension.swift */,
 			);
 			path = UIExtension;
+			sourceTree = "<group>";
+		};
+		57883EFD1E9C6A460053F318 /* UserInfoCenter */ = {
+			isa = PBXGroup;
+			children = (
+				57883EFE1E9C6A590053F318 /* UserInfoCenter.swift */,
+				57B0C3231E9C76ED00AE2B5C /* UserInfoModel.swift */,
+			);
+			path = UserInfoCenter;
+			sourceTree = "<group>";
+		};
+		57B0C32F1E9CC09900AE2B5C /* BaseClass */ = {
+			isa = PBXGroup;
+			children = (
+				57B0C3301E9CC0AD00AE2B5C /* BaseViewController.swift */,
+			);
+			path = BaseClass;
 			sourceTree = "<group>";
 		};
 		7E0C4CFB234D10F6224953E1 /* Frameworks */ = {
@@ -415,9 +461,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				57B0C3281E9CA47A00AE2B5C /* LoginViewController.xib in Resources */,
 				575672281E9B7E9900063EB0 /* RegisterViewController.xib in Resources */,
 				575671D01E9B7BB400063EB0 /* Assets.xcassets in Resources */,
 				575672221E9B7E9900063EB0 /* ThirdViewController.xib in Resources */,
+				57883EFC1E9C69E80053F318 /* MyCenterViewController.xib in Resources */,
 				5756721E1E9B7E9900063EB0 /* Main.storyboard in Resources */,
 				575672241E9B7E9900063EB0 /* SecondViewController.xib in Resources */,
 				575672201E9B7E9900063EB0 /* FourthViewController.xib in Resources */,
@@ -497,20 +545,28 @@
 			files = (
 				5756721F1E9B7E9900063EB0 /* FourthViewController.swift in Sources */,
 				575671CB1E9B7BB400063EB0 /* ViewController.swift in Sources */,
+				57B0C32C1E9CACFE00AE2B5C /* LoginHelper.swift in Sources */,
 				575672271E9B7E9900063EB0 /* RegisterViewController.swift in Sources */,
 				575672341E9B7F9C00063EB0 /* MNPublic.swift in Sources */,
+				57B0C3311E9CC0AD00AE2B5C /* BaseViewController.swift in Sources */,
 				575672311E9B7E9A00063EB0 /* SupportCode.swift in Sources */,
 				575672291E9B7E9900063EB0 /* RegisterViewModel.swift in Sources */,
 				5756722C1E9B7E9A00063EB0 /* HTTPApiBase.swift in Sources */,
 				575672321E9B7E9A00063EB0 /* UIView+Extension.swift in Sources */,
+				57B0C3271E9CA47A00AE2B5C /* LoginViewController.swift in Sources */,
 				575672211E9B7E9900063EB0 /* ThirdViewController.swift in Sources */,
 				5756722A1E9B7E9900063EB0 /* Service.swift in Sources */,
 				575672251E9B7E9900063EB0 /* MainViewController.swift in Sources */,
+				57883EFF1E9C6A590053F318 /* UserInfoCenter.swift in Sources */,
 				575672231E9B7E9900063EB0 /* SecondViewController.swift in Sources */,
 				5756722B1E9B7E9900063EB0 /* MyTabBarViewController.swift in Sources */,
 				5756722D1E9B7E9A00063EB0 /* NetworkRequest.swift in Sources */,
+				57B0C32E1E9CB66900AE2B5C /* LoginSwitchView.swift in Sources */,
 				575671C91E9B7BB400063EB0 /* AppDelegate.swift in Sources */,
+				57883EFB1E9C69E80053F318 /* MyCenterViewController.swift in Sources */,
+				57B0C32A1E9CA54200AE2B5C /* UIViewController+Extension.swift in Sources */,
 				575672301E9B7E9A00063EB0 /* Protocol.swift in Sources */,
+				57B0C3241E9C76ED00AE2B5C /* UserInfoModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -606,7 +662,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -650,7 +706,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -663,8 +719,11 @@
 			baseConfigurationReference = 327329398FEE0CEEEA0BCEB8 /* Pods-xywy_swift.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEVELOPMENT_TEAM = V8L5N46QJC;
 				INFOPLIST_FILE = xywy_swift/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "xywy.xywy-swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -677,8 +736,11 @@
 			baseConfigurationReference = 22080C2ADE078F2E164F9745 /* Pods-xywy_swift.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEVELOPMENT_TEAM = V8L5N46QJC;
 				INFOPLIST_FILE = xywy_swift/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "xywy.xywy-swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";

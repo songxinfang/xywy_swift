@@ -9,23 +9,11 @@
 import UIKit
 import Alamofire
 
-class SecondViewController: UIViewController {
+class SecondViewController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "健康头条"
         self.view.backgroundColor = UIColor.blue
-        
-        
-        Alamofire.request("https://api.500px.com/v1/photos").responseJSON { (DataResponse) in
-            
-            print(DataResponse)
-            
-            let Json = DataResponse.result.value
-            if (Json != nil){
-                print("Json:\(Json) ")
-            }
-        }
-
     }
 }

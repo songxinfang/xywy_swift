@@ -10,7 +10,7 @@ import UIKit
 import RxSwift
 import RxCocoa
 
-class MainViewController: UIViewController {
+class MainViewController: BaseViewController {
 
     @IBOutlet weak var testLabel: UILabel!
 
@@ -29,10 +29,10 @@ class MainViewController: UIViewController {
         let disposeBag = DisposeBag()
 
         textField.rx.text.orEmpty
-            .bindTo(testLabel.rx.text)
+            .bind(to: testLabel.rx.text)
             .addDisposableTo(disposeBag)
         
-        self.postRequestTest()
+//        self.postRequestTest()
         
     }
 

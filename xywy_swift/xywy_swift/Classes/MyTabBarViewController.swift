@@ -42,7 +42,7 @@ class MyTabBarViewController: UITabBarController, UITabBarControllerDelegate {
     private func zjInit() {
         var vcarray = [UINavigationController]()
         
-        let vcClasses : Array = ["MainViewController", "SecondViewController", "ThirdViewController", "FourthViewController", "RegisterViewController"];
+        let vcClasses : Array = ["MainViewController", "SecondViewController", "ThirdViewController", "FourthViewController", "MyCenterViewController"];
 
         for (index, classStringName) in vcClasses.enumerated()
         {
@@ -79,14 +79,16 @@ class MyTabBarViewController: UITabBarController, UITabBarControllerDelegate {
         // Do any additional setup after loading the view.
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
-    func tabBarController(_ tabBarController: UITabBarController, didSelect viewController: UIViewController)
+    func tabBarController(_ tabBarController: UITabBarController, shouldSelect viewController: UIViewController) -> Bool
     {
+        if (viewController.isEqual(self.viewControllers?.last) && !UserInfoCenter.standard.isLogin())
+        {
+            // 去登陆
+            LoginHelper.popLoginVc(vc: self, isPush: false, animated: true)
+            return false
+        }
         
+        return true
     }
     
     func setTabbarHidden(isH: Bool) {
