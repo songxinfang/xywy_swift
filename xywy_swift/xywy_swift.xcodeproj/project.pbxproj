@@ -116,6 +116,7 @@
 		576AFF091EA0674C00376308 /* MyCenterModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCenterModel.swift; sourceTree = "<group>"; };
 		576AFF0B1EA0677D00376308 /* MyCenterTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCenterTableViewCell.swift; sourceTree = "<group>"; };
 		576AFF0C1EA0677D00376308 /* MyCenterTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyCenterTableViewCell.xib; sourceTree = "<group>"; };
+		576AFF111EA0C47E00376308 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; };
 		57734D2E1E9F0A1A0065CD32 /* LoginRegisterApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginRegisterApi.swift; path = ../Classes/LoginRegister/LoginRegisterApi.swift; sourceTree = "<group>"; };
 		57734D301E9F114B0065CD32 /* String+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		57734D321E9F11A60065CD32 /* xywy_swift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "xywy_swift-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -214,6 +215,7 @@
 		575671C71E9B7BB400063EB0 /* xywy_swift */ = {
 			isa = PBXGroup;
 			children = (
+				576AFF111EA0C47E00376308 /* MyPlayground.playground */,
 				575671F71E9B7E9900063EB0 /* Base.lproj */,
 				575671FC1E9B7E9900063EB0 /* Classes */,
 				57B0C32F1E9CC09900AE2B5C /* BaseClass */,
