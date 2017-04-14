@@ -15,25 +15,58 @@ let kCurrentUserIdKey = "kPrivateCurrentUserId"
 open class UserInfoCenter {
 
     static let standard = UserInfoCenter()
-
+    
+    var currenUserInfo : UserInfoModel?
+    
     var userID : String? = nil
     
     private init() {}
     
     // 是否登录
-    func isLogin() -> Bool {
+    func isLogin() -> Bool
+    {
         return (self.getUserID() != nil)
     }
     
     // userid
-    func getUserID() -> String? {
-        return uDefault.object(forKey: kCurrentUserIdKey) as? String
-    }
-    
-    ///清除用户登录信息
-    func removeAllUserInfoWhenLongout() {
-        
+    func setUserID(userid: String)
+    {
+        userDefault.set(userid, forKey: kCurrentUserIdKey)
     }
 
+    func getUserID() -> String?
+    {
+        return userDefault.object(forKey: kCurrentUserIdKey) as? String
+    }
+    
+    func getCurrenUserInfo() -> UserInfoModel?
+    {
+        if self.isLogin() && currenUserInfo == nil
+        {
+            let  data = userDefault.object(forKey: self.getUserID()!)
+            self.currenUserInfo = UserInfoModel.init(dic: data as! [String : AnyObject])
+        }
+        
+        return self.currenUserInfo
+    }
+
+    ///清除用户登录信息
+    func removeAllUserInfoWhenLongout()
+    {
+        if self.isLogin()
+        {
+            userDefault.set(nil, forKey: self.getUserID()!)
+            userDefault.set(nil, forKey: kCurrentUserIdKey)
+        }
+    }
+
+    func saveUserInfo(data: [String : AnyObject])
+    {
+        self.setUserID(userid: data["userid"] as! String)
+        
+        userDefault.set(data, forKey: self.getUserID()!)
+        
+        userDefault.synchronize()
+    }
 }
 

@@ -16,5 +16,7 @@ class BaseViewController: UIViewController {
         self.view.isExclusiveTouch = true;
         self.edgesForExtendedLayout = UIRectEdge.init(rawValue: UInt.init());
         self.automaticallyAdjustsScrollViewInsets = false;
+        
+        self.view.backgroundColor = kRGBColorFromHex(rgbValue: 0xffffff)
     }
 }

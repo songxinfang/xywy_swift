@@ -28,6 +28,8 @@ class RegisterViewController: BaseViewController {
         super.viewDidLoad()
         self.title = "注册"
         
+        self.setLeftBackButton(icon: "nav_back", highIcon: nil)
+
         let viewModel = RegisterViewModel()
 
         usernameTextField.rx.text.orEmpty
@@ -91,10 +93,36 @@ class RegisterViewController: BaseViewController {
     }
     
     func showAlert(message: String) {
-        let action = UIAlertAction(title: "确定", style: .default, handler: nil)
-        let alertViewController = UIAlertController(title: nil, message: message, preferredStyle: .alert)
-        alertViewController.addAction(action)
-        present(alertViewController, animated: true, completion: nil)
+//        let action = UIAlertAction(title: "确定", style: .default, handler: nil)
+//        let alertViewController = UIAlertController(title: nil, message: message, preferredStyle: .alert)
+//        alertViewController.addAction(action)
+//        present(alertViewController, animated: true, completion: nil)
     }
 
+    override func viewWillAppear(_ animated: Bool)
+    {
+        super.viewWillAppear(animated)
+        
+        notifyDefault.addObserver(self, selector: #selector(LoginViewController.userDidLogin), name: NSNotification.Name.init(LoginHasFinishNotification), object: nil)
+    }
+    
+    override func viewWillDisappear(_ animated: Bool)
+    {
+        super.viewWillDisappear(animated)
+        
+        notifyDefault.removeObserver(self)
+    }
+    
+    func userDidLogin(notifyData : NSNotification)
+    {
+        let json = notifyData.object as! [String : AnyObject]
+        let data = json["data"]
+        
+        UserInfoCenter.standard.saveUserInfo(data: data as! [String : AnyObject])
+        
+        self.navigationController?.dismiss(animated: true, completion:nil)
+    }
 }
+
+
+

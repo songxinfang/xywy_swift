@@ -10,29 +10,41 @@ import UIKit
 
 extension UIViewController {
  
-    func setLeftBackButton(icon: String) {
-        
+    func setLeftBackButton(icon: String?, highIcon: String?)
+    {
         if (self.navigationController != nil) {
-         
             
-//            if (icon == nil) {
-//                icon = "nav_back"
-//            }
+            let iconName = ((icon != nil) ? icon : "nav_back")
             
-            let imageItem = UIBarButtonItem.init(image: UIImage.init(named: icon),
-                                                 style: UIBarButtonItemStyle.plain,
+            let imageItem = UIBarButtonItem.init(normalIcon: iconName,
+                                                 highIcon: highIcon,
+                                                 title: nil,
                                                  target: self,
                                                  action: #selector(backAction))
-
             self.navigationItem.leftBarButtonItem = imageItem;
-
         }
     }
     
-    func setRightButton(icon: String, action: Selector) {
-        
+    func setRightButton(icon: String?, highIcon: String?, action: Selector)
+    {
+        let imageItem = UIBarButtonItem.init(normalIcon: icon,
+                                             highIcon: highIcon,
+                                             title: nil,
+                                             target: self,
+                                             action: action)
+        self.navigationItem.rightBarButtonItem = imageItem;
     }
-    
+
+    func setRightButton(title: String, action: Selector)
+    {
+        let imageItem = UIBarButtonItem.init(normalIcon: nil,
+                                             highIcon: nil,
+                                             title: title,
+                                             target: self,
+                                             action: action)
+        self.navigationItem.rightBarButtonItem = imageItem;
+    }
+
     func backAction()
     {
         self.view.endEditing(true)
@@ -42,9 +54,7 @@ extension UIViewController {
         }
         else
         {
-            self.navigationController?.dismiss(animated: true, completion: { 
-                
-            })
+            self.navigationController?.dismiss(animated: true, completion:nil)
         }
     }
 }

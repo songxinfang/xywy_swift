@@ -11,7 +11,7 @@ import UIKit
 
 protocol LoginSwitchViewDelegate : NSObjectProtocol
 {
-    func loginSwitchViewSelectIndex(index: NSInteger);
+    func loginSwitchViewSelectIndex(index: NSInteger)
 }
 
 
@@ -19,18 +19,23 @@ protocol LoginSwitchViewDelegate : NSObjectProtocol
 
 class LoginSwitchView: UIView {
 
+    open var delegate: LoginSwitchViewDelegate?
+
     var btnArray: [UIButton]?
-    var bottomView: UIView? = nil
+//    var bottomView: UIView? = nil
     var bgLineView: UIView? = nil
     
     var selectBtn: UIButton?
 
-    init(frame: CGRect, titleArray: [String])
+    init(frame: CGRect, titleArray: [String], delegate: LoginSwitchViewDelegate)
     {
-     
         super.init(frame: frame)
         
-        self.backgroundColor = UIColor.white
+//        self.backgroundColor = UIColor.white
+        
+        self.backgroundColor = kRGBColorFromHex(rgbValue: 0xf2f2f2)
+
+        self.delegate = delegate
         
         self.buildUI(titleArray: titleArray)
     }
@@ -41,7 +46,6 @@ class LoginSwitchView: UIView {
         fatalError("init(coder:) has not been implemented")
     }
     
-    open var delegate: LoginSwitchViewDelegate?
 
     @objc private func btnClick(btn: UIButton)
     {
@@ -68,12 +72,11 @@ class LoginSwitchView: UIView {
 
         
         self.bgLineView = UIView.init(frame: CGRect.init(x: 0, y: H, width: W, height: 2))
-        self.bgLineView!.backgroundColor = kRGBColorFromHex(rgbValue: 0x6ed8ff)
-        self.addSubview(self.bgLineView!);
+        bgLineView!.backgroundColor = kRGBColorFromHex(rgbValue: 0x6ed8ff)
+        addSubview(bgLineView!);
         
-        self.bottomView = UIView.init(frame: CGRect.init(x: 0, y: 0, width: Width, height: H))
-        self.bottomView!.backgroundColor = kRGBColorFromHex(rgbValue: 0xf2f2f2)
-        self.addSubview(self.bottomView!)
+//        self.bottomView = UIView.init(frame: CGRect.init(x: 0, y: 0, width: Width, height: Height))
+//        self.addSubview(self.bottomView!)
         
         for (index,title) in titleArray.enumerated() {
             let btn = UIButton.init(frame: CGRect.init(x: CGFloat(index) * W, y: 0, width: W, height: H))
@@ -87,7 +90,7 @@ class LoginSwitchView: UIView {
             if index == 0 {
                 self.btnClick(btn: btn)
             }
-            self.addSubview(btn)
+            addSubview(btn)
             btnArray?.append(btn)
         }
     }

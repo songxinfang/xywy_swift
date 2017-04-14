@@ -7,6 +7,7 @@
 //
 
 import UIKit
+
 private var redpoint_CategoryKey: String = "redpoint_CategoryKey"
 
 extension UIView {

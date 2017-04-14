@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		572176561E9DF8EE00B301BB /* DynamicPwdLogin.xib in Resources */ = {isa = PBXBuildFile; fileRef = 572176551E9DF8EE00B301BB /* DynamicPwdLogin.xib */; };
+		572176581E9DFA1C00B301BB /* OriginPwdLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572176571E9DFA1C00B301BB /* OriginPwdLoginView.swift */; };
+		5721765A1E9DFA2900B301BB /* OriginPwdLoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 572176591E9DFA2900B301BB /* OriginPwdLoginView.xib */; };
 		575671C91E9B7BB400063EB0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575671C81E9B7BB400063EB0 /* AppDelegate.swift */; };
 		575671CB1E9B7BB400063EB0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575671CA1E9B7BB400063EB0 /* ViewController.swift */; };
 		575671D01E9B7BB400063EB0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 575671CF1E9B7BB400063EB0 /* Assets.xcassets */; };
@@ -33,6 +36,12 @@
 		575672311E9B7E9A00063EB0 /* SupportCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575672181E9B7E9900063EB0 /* SupportCode.swift */; };
 		575672321E9B7E9A00063EB0 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5756721B1E9B7E9900063EB0 /* UIView+Extension.swift */; };
 		575672341E9B7F9C00063EB0 /* MNPublic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575672331E9B7F9C00063EB0 /* MNPublic.swift */; };
+		576AFF0A1EA0674C00376308 /* MyCenterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576AFF091EA0674C00376308 /* MyCenterModel.swift */; };
+		576AFF0D1EA0677D00376308 /* MyCenterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576AFF0B1EA0677D00376308 /* MyCenterTableViewCell.swift */; };
+		576AFF0E1EA0677D00376308 /* MyCenterTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 576AFF0C1EA0677D00376308 /* MyCenterTableViewCell.xib */; };
+		57734D2F1E9F0A1A0065CD32 /* LoginRegisterApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57734D2E1E9F0A1A0065CD32 /* LoginRegisterApi.swift */; };
+		57734D311E9F114B0065CD32 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57734D301E9F114B0065CD32 /* String+Extension.swift */; };
+		57734D351E9F11A70065CD32 /* bridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 57734D341E9F11A70065CD32 /* bridge.m */; };
 		57883EFB1E9C69E80053F318 /* MyCenterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57883EF91E9C69E80053F318 /* MyCenterViewController.swift */; };
 		57883EFC1E9C69E80053F318 /* MyCenterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 57883EFA1E9C69E80053F318 /* MyCenterViewController.xib */; };
 		57883EFF1E9C6A590053F318 /* UserInfoCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57883EFE1E9C6A590053F318 /* UserInfoCenter.swift */; };
@@ -43,6 +52,9 @@
 		57B0C32C1E9CACFE00AE2B5C /* LoginHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B0C32B1E9CACFE00AE2B5C /* LoginHelper.swift */; };
 		57B0C32E1E9CB66900AE2B5C /* LoginSwitchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B0C32D1E9CB66900AE2B5C /* LoginSwitchView.swift */; };
 		57B0C3311E9CC0AD00AE2B5C /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B0C3301E9CC0AD00AE2B5C /* BaseViewController.swift */; };
+		57CFDC471E9DBCBA00C09D49 /* DynamicPwdLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CFDC461E9DBCBA00C09D49 /* DynamicPwdLogin.swift */; };
+		57CFDC491E9DBCC600C09D49 /* ThirdLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CFDC481E9DBCC600C09D49 /* ThirdLoginView.swift */; };
+		57CFDC4B1E9DC68C00C09D49 /* UIBarButtonItem+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CFDC4A1E9DC68C00C09D49 /* UIBarButtonItem+Extension.swift */; };
 		E8825B3509ED750277316AF8 /* Pods_xywy_swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C8B92B8278BAF17E81C35DB /* Pods_xywy_swift.framework */; };
 /* End PBXBuildFile section */
 
@@ -66,6 +78,9 @@
 /* Begin PBXFileReference section */
 		22080C2ADE078F2E164F9745 /* Pods-xywy_swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-xywy_swift.release.xcconfig"; path = "Pods/Target Support Files/Pods-xywy_swift/Pods-xywy_swift.release.xcconfig"; sourceTree = "<group>"; };
 		327329398FEE0CEEEA0BCEB8 /* Pods-xywy_swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-xywy_swift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-xywy_swift/Pods-xywy_swift.debug.xcconfig"; sourceTree = "<group>"; };
+		572176551E9DF8EE00B301BB /* DynamicPwdLogin.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DynamicPwdLogin.xib; sourceTree = "<group>"; };
+		572176571E9DFA1C00B301BB /* OriginPwdLoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OriginPwdLoginView.swift; sourceTree = "<group>"; };
+		572176591E9DFA2900B301BB /* OriginPwdLoginView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OriginPwdLoginView.xib; sourceTree = "<group>"; };
 		575671C51E9B7BB400063EB0 /* xywy_swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = xywy_swift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		575671C81E9B7BB400063EB0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		575671CA1E9B7BB400063EB0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -98,6 +113,14 @@
 		575672181E9B7E9900063EB0 /* SupportCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SupportCode.swift; sourceTree = "<group>"; };
 		5756721B1E9B7E9900063EB0 /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		575672331E9B7F9C00063EB0 /* MNPublic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MNPublic.swift; sourceTree = "<group>"; };
+		576AFF091EA0674C00376308 /* MyCenterModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCenterModel.swift; sourceTree = "<group>"; };
+		576AFF0B1EA0677D00376308 /* MyCenterTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCenterTableViewCell.swift; sourceTree = "<group>"; };
+		576AFF0C1EA0677D00376308 /* MyCenterTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyCenterTableViewCell.xib; sourceTree = "<group>"; };
+		57734D2E1E9F0A1A0065CD32 /* LoginRegisterApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginRegisterApi.swift; path = ../Classes/LoginRegister/LoginRegisterApi.swift; sourceTree = "<group>"; };
+		57734D301E9F114B0065CD32 /* String+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		57734D321E9F11A60065CD32 /* xywy_swift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "xywy_swift-Bridging-Header.h"; sourceTree = "<group>"; };
+		57734D331E9F11A70065CD32 /* bridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bridge.h; sourceTree = "<group>"; };
+		57734D341E9F11A70065CD32 /* bridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = bridge.m; sourceTree = "<group>"; };
 		57883EF91E9C69E80053F318 /* MyCenterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCenterViewController.swift; sourceTree = "<group>"; };
 		57883EFA1E9C69E80053F318 /* MyCenterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyCenterViewController.xib; sourceTree = "<group>"; };
 		57883EFE1E9C6A590053F318 /* UserInfoCenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInfoCenter.swift; sourceTree = "<group>"; };
@@ -105,9 +128,12 @@
 		57B0C3251E9CA47A00AE2B5C /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		57B0C3261E9CA47A00AE2B5C /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		57B0C3291E9CA54200AE2B5C /* UIViewController+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
-		57B0C32B1E9CACFE00AE2B5C /* LoginHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginHelper.swift; sourceTree = "<group>"; };
+		57B0C32B1E9CACFE00AE2B5C /* LoginHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginHelper.swift; path = ../../Tools/LoginHelper.swift; sourceTree = "<group>"; };
 		57B0C32D1E9CB66900AE2B5C /* LoginSwitchView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginSwitchView.swift; sourceTree = "<group>"; };
 		57B0C3301E9CC0AD00AE2B5C /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		57CFDC461E9DBCBA00C09D49 /* DynamicPwdLogin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynamicPwdLogin.swift; sourceTree = "<group>"; };
+		57CFDC481E9DBCC600C09D49 /* ThirdLoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdLoginView.swift; sourceTree = "<group>"; };
+		57CFDC4A1E9DC68C00C09D49 /* UIBarButtonItem+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Extension.swift"; sourceTree = "<group>"; };
 		8C8B92B8278BAF17E81C35DB /* Pods_xywy_swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_xywy_swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -137,6 +163,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		572176511E9DF87C00B301BB /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				57B0C3251E9CA47A00AE2B5C /* LoginViewController.swift */,
+				57B0C3261E9CA47A00AE2B5C /* LoginViewController.xib */,
+				57B0C32D1E9CB66900AE2B5C /* LoginSwitchView.swift */,
+				572176571E9DFA1C00B301BB /* OriginPwdLoginView.swift */,
+				572176591E9DFA2900B301BB /* OriginPwdLoginView.xib */,
+				57CFDC461E9DBCBA00C09D49 /* DynamicPwdLogin.swift */,
+				572176551E9DF8EE00B301BB /* DynamicPwdLogin.xib */,
+				57CFDC481E9DBCC600C09D49 /* ThirdLoginView.swift */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
+		572176521E9DF88900B301BB /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				5756720D1E9B7E9900063EB0 /* Service.swift */,
+				5756720A1E9B7E9900063EB0 /* RegisterViewController.swift */,
+				5756720B1E9B7E9900063EB0 /* RegisterViewController.xib */,
+				5756720C1E9B7E9900063EB0 /* RegisterViewModel.swift */,
+			);
+			name = Register;
+			sourceTree = "<group>";
+		};
 		575671BC1E9B7BB400063EB0 = {
 			isa = PBXGroup;
 			children = (
@@ -258,13 +310,9 @@
 		575672091E9B7E9900063EB0 /* LoginRegister */ = {
 			isa = PBXGroup;
 			children = (
-				57B0C3251E9CA47A00AE2B5C /* LoginViewController.swift */,
-				57B0C3261E9CA47A00AE2B5C /* LoginViewController.xib */,
-				57B0C32D1E9CB66900AE2B5C /* LoginSwitchView.swift */,
-				5756720A1E9B7E9900063EB0 /* RegisterViewController.swift */,
-				5756720B1E9B7E9900063EB0 /* RegisterViewController.xib */,
-				5756720C1E9B7E9900063EB0 /* RegisterViewModel.swift */,
-				5756720D1E9B7E9900063EB0 /* Service.swift */,
+				572176521E9DF88900B301BB /* Register */,
+				572176511E9DF87C00B301BB /* Login */,
+				57B0C32B1E9CACFE00AE2B5C /* LoginHelper.swift */,
 			);
 			path = LoginRegister;
 			sourceTree = "<group>";
@@ -274,6 +322,9 @@
 			children = (
 				57883EF91E9C69E80053F318 /* MyCenterViewController.swift */,
 				57883EFA1E9C69E80053F318 /* MyCenterViewController.xib */,
+				576AFF091EA0674C00376308 /* MyCenterModel.swift */,
+				576AFF0B1EA0677D00376308 /* MyCenterTableViewCell.swift */,
+				576AFF0C1EA0677D00376308 /* MyCenterTableViewCell.xib */,
 			);
 			path = MyCenter;
 			sourceTree = "<group>";
@@ -283,6 +334,7 @@
 			children = (
 				575672121E9B7E9900063EB0 /* HTTPApiBase.swift */,
 				575672131E9B7E9900063EB0 /* NetworkRequest.swift */,
+				57734D2E1E9F0A1A0065CD32 /* LoginRegisterApi.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -300,7 +352,9 @@
 		575672191E9B7E9900063EB0 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
-				57B0C32B1E9CACFE00AE2B5C /* LoginHelper.swift */,
+				57734D331E9F11A70065CD32 /* bridge.h */,
+				57734D341E9F11A70065CD32 /* bridge.m */,
+				57734D321E9F11A60065CD32 /* xywy_swift-Bridging-Header.h */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -310,6 +364,8 @@
 			children = (
 				5756721B1E9B7E9900063EB0 /* UIView+Extension.swift */,
 				57B0C3291E9CA54200AE2B5C /* UIViewController+Extension.swift */,
+				57CFDC4A1E9DC68C00C09D49 /* UIBarButtonItem+Extension.swift */,
+				57734D301E9F114B0065CD32 /* String+Extension.swift */,
 			);
 			path = UIExtension;
 			sourceTree = "<group>";
@@ -420,6 +476,7 @@
 					575671C41E9B7BB400063EB0 = {
 						CreatedOnToolsVersion = 8.3;
 						DevelopmentTeam = V8L5N46QJC;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 					575671D81E9B7BB400063EB0 = {
@@ -462,10 +519,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				57B0C3281E9CA47A00AE2B5C /* LoginViewController.xib in Resources */,
+				572176561E9DF8EE00B301BB /* DynamicPwdLogin.xib in Resources */,
 				575672281E9B7E9900063EB0 /* RegisterViewController.xib in Resources */,
 				575671D01E9B7BB400063EB0 /* Assets.xcassets in Resources */,
+				576AFF0E1EA0677D00376308 /* MyCenterTableViewCell.xib in Resources */,
 				575672221E9B7E9900063EB0 /* ThirdViewController.xib in Resources */,
 				57883EFC1E9C69E80053F318 /* MyCenterViewController.xib in Resources */,
+				5721765A1E9DFA2900B301BB /* OriginPwdLoginView.xib in Resources */,
 				5756721E1E9B7E9900063EB0 /* Main.storyboard in Resources */,
 				575672241E9B7E9900063EB0 /* SecondViewController.xib in Resources */,
 				575672201E9B7E9900063EB0 /* FourthViewController.xib in Resources */,
@@ -549,23 +609,32 @@
 				575672271E9B7E9900063EB0 /* RegisterViewController.swift in Sources */,
 				575672341E9B7F9C00063EB0 /* MNPublic.swift in Sources */,
 				57B0C3311E9CC0AD00AE2B5C /* BaseViewController.swift in Sources */,
+				576AFF0A1EA0674C00376308 /* MyCenterModel.swift in Sources */,
+				57734D351E9F11A70065CD32 /* bridge.m in Sources */,
 				575672311E9B7E9A00063EB0 /* SupportCode.swift in Sources */,
 				575672291E9B7E9900063EB0 /* RegisterViewModel.swift in Sources */,
+				57CFDC491E9DBCC600C09D49 /* ThirdLoginView.swift in Sources */,
 				5756722C1E9B7E9A00063EB0 /* HTTPApiBase.swift in Sources */,
 				575672321E9B7E9A00063EB0 /* UIView+Extension.swift in Sources */,
+				57CFDC471E9DBCBA00C09D49 /* DynamicPwdLogin.swift in Sources */,
 				57B0C3271E9CA47A00AE2B5C /* LoginViewController.swift in Sources */,
 				575672211E9B7E9900063EB0 /* ThirdViewController.swift in Sources */,
 				5756722A1E9B7E9900063EB0 /* Service.swift in Sources */,
 				575672251E9B7E9900063EB0 /* MainViewController.swift in Sources */,
 				57883EFF1E9C6A590053F318 /* UserInfoCenter.swift in Sources */,
 				575672231E9B7E9900063EB0 /* SecondViewController.swift in Sources */,
+				576AFF0D1EA0677D00376308 /* MyCenterTableViewCell.swift in Sources */,
 				5756722B1E9B7E9900063EB0 /* MyTabBarViewController.swift in Sources */,
 				5756722D1E9B7E9A00063EB0 /* NetworkRequest.swift in Sources */,
 				57B0C32E1E9CB66900AE2B5C /* LoginSwitchView.swift in Sources */,
+				57734D2F1E9F0A1A0065CD32 /* LoginRegisterApi.swift in Sources */,
 				575671C91E9B7BB400063EB0 /* AppDelegate.swift in Sources */,
+				572176581E9DFA1C00B301BB /* OriginPwdLoginView.swift in Sources */,
 				57883EFB1E9C69E80053F318 /* MyCenterViewController.swift in Sources */,
+				57CFDC4B1E9DC68C00C09D49 /* UIBarButtonItem+Extension.swift in Sources */,
 				57B0C32A1E9CA54200AE2B5C /* UIViewController+Extension.swift in Sources */,
 				575672301E9B7E9A00063EB0 /* Protocol.swift in Sources */,
+				57734D311E9F114B0065CD32 /* String+Extension.swift in Sources */,
 				57B0C3241E9C76ED00AE2B5C /* UserInfoModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -720,6 +789,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEVELOPMENT_TEAM = V8L5N46QJC;
 				INFOPLIST_FILE = xywy_swift/Info.plist;
@@ -727,6 +797,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "xywy.xywy-swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "xywy_swift/Tools/xywy_swift-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -737,6 +809,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEVELOPMENT_TEAM = V8L5N46QJC;
 				INFOPLIST_FILE = xywy_swift/Info.plist;
@@ -744,6 +817,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "xywy.xywy-swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "xywy_swift/Tools/xywy_swift-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

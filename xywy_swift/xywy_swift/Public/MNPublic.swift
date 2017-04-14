@@ -7,11 +7,30 @@
 //
 
 import UIKit
+
 // Public
-let ScreenWidth = UIScreen.main.bounds.size.width
-let ScreenHeight = UIScreen.main.bounds.size.height
+let screenWidth = UIScreen.main.bounds.size.width
+let screenHeight = UIScreen.main.bounds.size.height
+
+let topBarHeight: CGFloat = 64
+let tabBarHeight: CGFloat = 49
+
+// 当前设备系统版本
+let IS_IOS8 = (UIDevice.current.systemVersion as NSString).doubleValue >= 8.0
+let IS_IOS9 = (UIDevice.current.systemVersion as NSString).doubleValue >= 9.0
+let IS_IOS10 = (UIDevice.current.systemVersion as NSString).doubleValue >= 10.0
+
+// 屏幕尺寸
+let IS_IPHONE4 = UIScreen.main.currentMode!.size.equalTo(CGSize.init(width: 640, height: 960))
+let IS_IPHONE5 = UIScreen.main.currentMode!.size.equalTo(CGSize.init(width: 640, height: 1136))
+let IS_IPHONE6 = UIScreen.main.currentMode!.size.equalTo(CGSize.init(width: 750, height: 1334))
+let IS_IPHONE6P = UIScreen.main.currentMode!.size.equalTo(CGSize.init(width: 1242, height: 2208))
+
+// 通知
+let LoginHasFinishNotification = "LoginHasFinishNotification"
 
 
+// 公共函数
 func ImageUrl(str: String?) -> NSURL {
     if let temp = str {
         return NSURL.init(string: temp)!
@@ -46,7 +65,8 @@ func kRGBColorFromHex(rgbValue: Int) -> (UIColor)
 }
 
 // NSUserDefault
-let uDefault = UserDefaults.standard
+let userDefault = UserDefaults.standard
+let notifyDefault = NotificationCenter.default
 
 // 文字大小适配
 func f(num: CGFloat) -> UIFont
@@ -69,16 +89,3 @@ func fAndN(num: CGFloat, fontName: String) -> UIFont
 func fb(num: CGFloat) -> UIFont {
     return UIFont.boldSystemFont(ofSize: num)
 }
-
-// 当前设备系统版本
-let IS_IOS8 = (UIDevice.current.systemVersion as NSString).doubleValue >= 8.0
-let IS_IOS9 = (UIDevice.current.systemVersion as NSString).doubleValue >= 9.0
-let IS_IOS10 = (UIDevice.current.systemVersion as NSString).doubleValue >= 10.0
-
-// 屏幕尺寸
-let IS_IPHONE4 = UIScreen.main.currentMode!.size.equalTo(CGSize.init(width: 640, height: 960))
-let IS_IPHONE5 = UIScreen.main.currentMode!.size.equalTo(CGSize.init(width: 640, height: 1136))
-let IS_IPHONE6 = UIScreen.main.currentMode!.size.equalTo(CGSize.init(width: 750, height: 1334))
-let IS_IPHONE6P = UIScreen.main.currentMode!.size.equalTo(CGSize.init(width: 1242, height: 2208))
-
-// 公共函数

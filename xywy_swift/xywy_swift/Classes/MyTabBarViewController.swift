@@ -94,7 +94,7 @@ class MyTabBarViewController: UITabBarController, UITabBarControllerDelegate {
     func setTabbarHidden(isH: Bool) {
         if isH != self.tabBar.isHidden {
             if isH {
-                if self.tabBar.y >= ScreenHeight {
+                if self.tabBar.y >= screenHeight {
                     return
                 }
                 UIView.animate(withDuration: 0.2, animations: { 
@@ -104,7 +104,7 @@ class MyTabBarViewController: UITabBarController, UITabBarControllerDelegate {
                 })
             }
             else {
-                if self.tabBar.y <= ScreenHeight - 49 {
+                if self.tabBar.y <= screenHeight - 49 {
                     return
                 }
                 self.tabBar.isHidden = isH

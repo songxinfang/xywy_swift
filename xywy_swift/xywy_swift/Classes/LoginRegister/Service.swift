@@ -60,6 +60,9 @@ class ValidationService {
     }
     
     func register(_ username: String, password: String) -> Observable<Result> {
+        
+        loginWith(username: username, password: password)
+        
         let userDic = [username: password]
         
         let filePath = NSHomeDirectory() + "/Documents/users.plist"
