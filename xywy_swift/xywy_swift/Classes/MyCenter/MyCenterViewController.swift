@@ -31,16 +31,16 @@ class MyCenterViewController: BaseViewController, UITableViewDelegate, UITableVi
         
         
         var array2: [MyCenterModel] = Array.init()
-        array2.append(MyCenterModel.init(icon: "mine_item_ask_answer", title: "问答", number: "0"))
-        array2.append(MyCenterModel.init(icon: "mine_item_register", title: "预约转诊", number: "0"))
-        array2.append(MyCenterModel.init(icon: "mine_item_phone_doctor", title: "电话医生", number: "1"))
-        array2.append(MyCenterModel.init(icon: "mine_item_home_doctor", title: "家庭医生", number: "1"))
+        array2.append(MyCenterModel.init(icon: "mine_item_ask_answer", title: "问答", number: "10"))
+        array2.append(MyCenterModel.init(icon: "mine_item_register", title: "预约转诊", number: "100"))
+        array2.append(MyCenterModel.init(icon: "mine_item_phone_doctor", title: "电话医生", number: "1000"))
+        array2.append(MyCenterModel.init(icon: "mine_item_home_doctor", title: "家庭医生", number: "10000"))
         dataSource.append(array2)
 
         
         var array3: [MyCenterModel] = Array.init()
-        array3.append(MyCenterModel.init(icon: "mine_item_community", title: "社区", number: "2"))
-        array3.append(MyCenterModel.init(icon: "mine_item_small_tools", title: "小工具", number: "3"))
+        array3.append(MyCenterModel.init(icon: "mine_item_community", title: "社区", number: "0"))
+        array3.append(MyCenterModel.init(icon: "mine_item_small_tools", title: "小工具", number: "0"))
         dataSource.append(array3)
     }
     
@@ -52,8 +52,6 @@ class MyCenterViewController: BaseViewController, UITableViewDelegate, UITableVi
             
         tableView.backgroundColor = kRGBColorFromHex(rgbValue: 0xfcfcfc)
         tableView.separatorStyle = UITableViewCellSeparatorStyle.singleLine
-        tableView.tableHeaderView = UIView.init(frame: CGRect.init(x: 0, y: 0, width: screenWidth, height: 140))
-        tableView.tableHeaderView?.backgroundColor = UIColor.orange
         tableView.delegate = self
         tableView.dataSource = self
         
@@ -72,21 +70,32 @@ class MyCenterViewController: BaseViewController, UITableViewDelegate, UITableVi
     // MARK: ------------ UITableViewDataSource ------------
     func numberOfSections(in tableView: UITableView) -> Int
     {
-        return dataSource.count
+        return 1 + dataSource.count
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
-        return dataSource[section].count
+        if section == 0 {
+            return 1
+        }
+        return dataSource[section-1].count
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat
     {
+        if indexPath.section == 0 {
+            return 100
+        }
+
         return 44.0
     }
 
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat
     {
+        if section == 0 {
+            return 0.00001
+        }
+
         return 8.0
     }
     
@@ -104,15 +113,24 @@ class MyCenterViewController: BaseViewController, UITableViewDelegate, UITableVi
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
     {
+        if indexPath.section == 0
+        {
+//            tableView.register(UINib.init(nibName: "MyCenterHeaderCell", bundle: nil), forCellReuseIdentifier: "MyCenterHeaderCell")
+
+            let cell : MyCenterHeaderCell? = Bundle.main.loadNibNamed("MyCenterHeaderCell", owner: self, options: nil)?.last as? MyCenterHeaderCell
+            cell?.setCenterModel(model: UserInfoCenter.standard.getCurrenUserInfo()!)
+            return cell!
+        }
+        
         let cell : MyCenterTableViewCell? = tableView.dequeueReusableCell(withIdentifier: "MyCenterTableViewCell") as? MyCenterTableViewCell
-        cell?.setCenterModel(model: dataSource[indexPath.section][indexPath.row])
+        cell?.setCenterModel(model: dataSource[indexPath.section-1][indexPath.row])
         return cell!
     }
     
     // MARK: ------------ UITableViewDelegate ------------
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
     {
-        print("didSelectRowAt \(indexPath)")
+        tableView.deselectRow(at: indexPath, animated: true)
     }
 
     // MARK: ------------ UIAlertViewDelegate ------------

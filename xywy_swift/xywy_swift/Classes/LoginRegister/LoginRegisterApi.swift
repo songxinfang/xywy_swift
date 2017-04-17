@@ -21,6 +21,8 @@ func loginWith(username: String, password: String)
     sendGetRequest(urlString: url, params: param as! [String : AnyObject], success:
     { (json) in
         
+        print(json)
+        
         notifyDefault.post(name: NSNotification.Name.init(LoginHasFinishNotification), object: json)
         
     }) { (error) in

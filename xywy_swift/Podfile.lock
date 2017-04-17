@@ -4,7 +4,7 @@ PODS:
   - BSImagePicker (2.6.0):
     - BSGridCollectionViewLayout (~> 1.2.0)
     - UIImageViewModeScaleAspect (= 1.5)
-  - Kingfisher (3.6.1)
+  - Kingfisher (3.6.2)
   - PullToRefresher (2.0.2)
   - RxCocoa (3.4.0):
     - RxSwift (~> 3.4)
@@ -27,7 +27,7 @@ SPEC CHECKSUMS:
   Alamofire: dc44b1600b800eb63da6a19039a0083d62a6a62d
   BSGridCollectionViewLayout: 8f12c8e1e08c47057f5a39a6828f4395f043d78f
   BSImagePicker: 7b740d0a9f23160bcdca01f179445583bd1c09b0
-  Kingfisher: 2f31cb75f3e98d3d4c406cbdcd9b263e956cfa67
+  Kingfisher: 2c94e72c6830622c71d06adf4ea024c37d316830
   PullToRefresher: 5e101a8c3523e67ee0291375ba932ef59e0853c2
   RxCocoa: d14ef6b6029e1ddc6e966508c09289090de68ff9
   RxSwift: 3789a1af753002a14edecdb698a2424624296a9c

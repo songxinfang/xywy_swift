@@ -42,6 +42,8 @@
 		57734D2F1E9F0A1A0065CD32 /* LoginRegisterApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57734D2E1E9F0A1A0065CD32 /* LoginRegisterApi.swift */; };
 		57734D311E9F114B0065CD32 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57734D301E9F114B0065CD32 /* String+Extension.swift */; };
 		57734D351E9F11A70065CD32 /* bridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 57734D341E9F11A70065CD32 /* bridge.m */; };
+		5786D0EC1EA454B3009C909A /* MyCenterHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5786D0EA1EA454B3009C909A /* MyCenterHeaderCell.swift */; };
+		5786D0ED1EA454B3009C909A /* MyCenterHeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5786D0EB1EA454B3009C909A /* MyCenterHeaderCell.xib */; };
 		57883EFB1E9C69E80053F318 /* MyCenterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57883EF91E9C69E80053F318 /* MyCenterViewController.swift */; };
 		57883EFC1E9C69E80053F318 /* MyCenterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 57883EFA1E9C69E80053F318 /* MyCenterViewController.xib */; };
 		57883EFF1E9C6A590053F318 /* UserInfoCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57883EFE1E9C6A590053F318 /* UserInfoCenter.swift */; };
@@ -122,6 +124,8 @@
 		57734D321E9F11A60065CD32 /* xywy_swift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "xywy_swift-Bridging-Header.h"; sourceTree = "<group>"; };
 		57734D331E9F11A70065CD32 /* bridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bridge.h; sourceTree = "<group>"; };
 		57734D341E9F11A70065CD32 /* bridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = bridge.m; sourceTree = "<group>"; };
+		5786D0EA1EA454B3009C909A /* MyCenterHeaderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCenterHeaderCell.swift; sourceTree = "<group>"; };
+		5786D0EB1EA454B3009C909A /* MyCenterHeaderCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyCenterHeaderCell.xib; sourceTree = "<group>"; };
 		57883EF91E9C69E80053F318 /* MyCenterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCenterViewController.swift; sourceTree = "<group>"; };
 		57883EFA1E9C69E80053F318 /* MyCenterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyCenterViewController.xib; sourceTree = "<group>"; };
 		57883EFE1E9C6A590053F318 /* UserInfoCenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInfoCenter.swift; sourceTree = "<group>"; };
@@ -327,6 +331,8 @@
 				576AFF091EA0674C00376308 /* MyCenterModel.swift */,
 				576AFF0B1EA0677D00376308 /* MyCenterTableViewCell.swift */,
 				576AFF0C1EA0677D00376308 /* MyCenterTableViewCell.xib */,
+				5786D0EA1EA454B3009C909A /* MyCenterHeaderCell.swift */,
+				5786D0EB1EA454B3009C909A /* MyCenterHeaderCell.xib */,
 			);
 			path = MyCenter;
 			sourceTree = "<group>";
@@ -527,6 +533,7 @@
 				576AFF0E1EA0677D00376308 /* MyCenterTableViewCell.xib in Resources */,
 				575672221E9B7E9900063EB0 /* ThirdViewController.xib in Resources */,
 				57883EFC1E9C69E80053F318 /* MyCenterViewController.xib in Resources */,
+				5786D0ED1EA454B3009C909A /* MyCenterHeaderCell.xib in Resources */,
 				5721765A1E9DFA2900B301BB /* OriginPwdLoginView.xib in Resources */,
 				5756721E1E9B7E9900063EB0 /* Main.storyboard in Resources */,
 				575672241E9B7E9900063EB0 /* SecondViewController.xib in Resources */,
@@ -614,6 +621,7 @@
 				576AFF0A1EA0674C00376308 /* MyCenterModel.swift in Sources */,
 				57734D351E9F11A70065CD32 /* bridge.m in Sources */,
 				575672311E9B7E9A00063EB0 /* SupportCode.swift in Sources */,
+				5786D0EC1EA454B3009C909A /* MyCenterHeaderCell.swift in Sources */,
 				575672291E9B7E9900063EB0 /* RegisterViewModel.swift in Sources */,
 				57CFDC491E9DBCC600C09D49 /* ThirdLoginView.swift in Sources */,
 				5756722C1E9B7E9A00063EB0 /* HTTPApiBase.swift in Sources */,
