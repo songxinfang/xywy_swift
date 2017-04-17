@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		571D6DA91EA4835B00708E64 /* CrossRiver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571D6DA81EA4835B00708E64 /* CrossRiver.swift */; };
 		572176561E9DF8EE00B301BB /* DynamicPwdLogin.xib in Resources */ = {isa = PBXBuildFile; fileRef = 572176551E9DF8EE00B301BB /* DynamicPwdLogin.xib */; };
 		572176581E9DFA1C00B301BB /* OriginPwdLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572176571E9DFA1C00B301BB /* OriginPwdLoginView.swift */; };
 		5721765A1E9DFA2900B301BB /* OriginPwdLoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 572176591E9DFA2900B301BB /* OriginPwdLoginView.xib */; };
@@ -80,6 +81,7 @@
 /* Begin PBXFileReference section */
 		22080C2ADE078F2E164F9745 /* Pods-xywy_swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-xywy_swift.release.xcconfig"; path = "Pods/Target Support Files/Pods-xywy_swift/Pods-xywy_swift.release.xcconfig"; sourceTree = "<group>"; };
 		327329398FEE0CEEEA0BCEB8 /* Pods-xywy_swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-xywy_swift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-xywy_swift/Pods-xywy_swift.debug.xcconfig"; sourceTree = "<group>"; };
+		571D6DA81EA4835B00708E64 /* CrossRiver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CrossRiver.swift; sourceTree = "<group>"; };
 		572176551E9DF8EE00B301BB /* DynamicPwdLogin.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DynamicPwdLogin.xib; sourceTree = "<group>"; };
 		572176571E9DFA1C00B301BB /* OriginPwdLoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OriginPwdLoginView.swift; sourceTree = "<group>"; };
 		572176591E9DFA2900B301BB /* OriginPwdLoginView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OriginPwdLoginView.xib; sourceTree = "<group>"; };
@@ -118,7 +120,6 @@
 		576AFF091EA0674C00376308 /* MyCenterModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCenterModel.swift; sourceTree = "<group>"; };
 		576AFF0B1EA0677D00376308 /* MyCenterTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCenterTableViewCell.swift; sourceTree = "<group>"; };
 		576AFF0C1EA0677D00376308 /* MyCenterTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyCenterTableViewCell.xib; sourceTree = "<group>"; };
-		576AFF111EA0C47E00376308 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; };
 		57734D2E1E9F0A1A0065CD32 /* LoginRegisterApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginRegisterApi.swift; path = ../Classes/LoginRegister/LoginRegisterApi.swift; sourceTree = "<group>"; };
 		57734D301E9F114B0065CD32 /* String+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		57734D321E9F11A60065CD32 /* xywy_swift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "xywy_swift-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -219,7 +220,6 @@
 		575671C71E9B7BB400063EB0 /* xywy_swift */ = {
 			isa = PBXGroup;
 			children = (
-				576AFF111EA0C47E00376308 /* MyPlayground.playground */,
 				575671F71E9B7E9900063EB0 /* Base.lproj */,
 				575671FC1E9B7E9900063EB0 /* Classes */,
 				57B0C32F1E9CC09900AE2B5C /* BaseClass */,
@@ -353,6 +353,7 @@
 				575672331E9B7F9C00063EB0 /* MNPublic.swift */,
 				575672171E9B7E9900063EB0 /* Protocol.swift */,
 				575672181E9B7E9900063EB0 /* SupportCode.swift */,
+				571D6DA81EA4835B00708E64 /* CrossRiver.swift */,
 			);
 			path = Public;
 			sourceTree = "<group>";
@@ -620,6 +621,7 @@
 				57B0C3311E9CC0AD00AE2B5C /* BaseViewController.swift in Sources */,
 				576AFF0A1EA0674C00376308 /* MyCenterModel.swift in Sources */,
 				57734D351E9F11A70065CD32 /* bridge.m in Sources */,
+				571D6DA91EA4835B00708E64 /* CrossRiver.swift in Sources */,
 				575672311E9B7E9A00063EB0 /* SupportCode.swift in Sources */,
 				5786D0EC1EA454B3009C909A /* MyCenterHeaderCell.swift in Sources */,
 				575672291E9B7E9900063EB0 /* RegisterViewModel.swift in Sources */,
